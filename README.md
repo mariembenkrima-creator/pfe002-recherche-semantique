@@ -10,7 +10,7 @@ basé sur sentence-transformers, Qdrant et FastAPI.
 
 ## Installation
 ```bash
-git clone https://github.com/mariembenkrima/pfe002-recherche-semantique.git
+git clone https://github.com/mariembenkrima-creator/pfe002-recherche-semantique.git
 cd pfe002-recherche-semantique
 python -m venv .venv
 source .venv/bin/activate        # Windows (Git Bash) : source .venv/Scripts/activate
