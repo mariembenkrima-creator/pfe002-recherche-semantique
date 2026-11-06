@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environnements et secrets
+.venv/
+venv/
+.env
+
+# Données (on garde seulement le dossier)
+data/*
+!data/.gitkeep
+
+# Modèles d'embeddings téléchargés
+models/*
+!models/.gitkeep
+
+# Artefacts d'index
+qdrant_storage/
+snapshots/
+*.snapshot
+indexes/
+*.pkl
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
