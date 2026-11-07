@@ -1,0 +1,8 @@
+# Pile technique du cahier des charges
+sentence-transformers
+qdrant-client
+fastapi
+uvicorn
+
+# Tests
+pytest

@@ -14,7 +14,9 @@ git clone https://github.com/mariembenkrima-creator/pfe002-recherche-semantique.
 cd pfe002-recherche-semantique
 python -m venv .venv
 source .venv/bin/activate        # Windows (Git Bash) : source .venv/Scripts/activate
+pip install -r requirements.txt
 pip install -e .
+pytest
 ```
 
 ## Arborescence
