@@ -14,9 +14,11 @@ app = FastAPI(
     version="0.1.0",
 )
 
-# Client Qdrant : il ne se connecte pas tout de suite, seulement quand on l'utilise.
+## Client Qdrant : il ne se connecte pas tout de suite, seulement quand on l'utilise.
 # timeout=2 : on n'attend pas plus de 2 secondes une réponse de Qdrant.
-client_qdrant = QdrantClient(url=QDRANT_URL, timeout=2)
+# check_compatibility=False : pas d'appel réseau au démarrage. Les versions du client
+# et du serveur sont déjà figées toutes les deux en 1.20.0 (requirements.txt et docker-compose.yml).
+client_qdrant = QdrantClient(url=QDRANT_URL, timeout=2, check_compatibility=False)
 
 
 def qdrant_est_connecte() -> bool:
