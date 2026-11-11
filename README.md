@@ -60,3 +60,15 @@ docker compose down
 docker compose up -d
 python scripts/verifier_persistance.py verifier   # doit afficher "OK"
 ```
+
+## API (FastAPI)
+
+Démarrer l'API (Qdrant doit tourner) :
+
+```bash
+uvicorn semsearch.api.main:app --reload
+```
+
+- Point de santé : http://127.0.0.1:8000/health renvoie `{"statut": "ok", "qdrant": "connecte"}`, ou `"injoignable"` si Qdrant est arrêté.
+- Documentation interactive (OpenAPI) : http://127.0.0.1:8000/docs
+- L'adresse de Qdrant est configurable avec la variable d'environnement `QDRANT_URL` (par défaut `http://localhost:6333`).
