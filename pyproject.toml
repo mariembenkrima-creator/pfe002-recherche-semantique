@@ -7,3 +7,23 @@ dependencies = []
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
+
+# ---------- Formatage et analyse statique (Ruff) ----------
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+extend-exclude = ["qdrant_storage", "data", "models"]
+
+[tool.ruff.lint]
+# Familles de règles activées :
+# E, W = style (PEP 8) · F = erreurs (imports inutiles, noms inconnus)
+# I = ordre des imports · B = bugs fréquents · UP = syntaxe Python moderne
+# BLE = exceptions trop larges · PLW = avertissements Pylint
+select = ["E", "W", "F", "I", "B", "UP", "BLE", "PLW"]
+# La longueur des lignes est gérée par le formateur, pas par l'analyse statique
+ignore = ["E501"]
+
+# ---------- Tests et couverture ----------
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=semsearch --cov-report=term-missing"

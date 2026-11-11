@@ -1,4 +1,5 @@
 """Service HTTP du moteur de recherche (ticket MBKP0IA-14)."""
+
 import os
 
 from fastapi import FastAPI
@@ -26,7 +27,7 @@ def qdrant_est_connecte() -> bool:
     try:
         client_qdrant.get_collections()
         return True
-    except Exception:
+    except Exception:  # noqa: BLE001 — un point de santé ne doit jamais planter
         return False
 
 

@@ -30,6 +30,8 @@ colorama==0.4.6
     #   pytest
     #   tqdm
     #   typer
+coverage[toml]==7.17.2
+    # via pytest-cov
 fastapi==0.162.2
     # via -r requirements.in
 filelock==4.2.9
@@ -106,7 +108,9 @@ packaging==26.3
     #   pytest
     #   transformers
 pluggy==1.7.0
-    # via pytest
+    # via
+    #   pytest
+    #   pytest-cov
 portalocker==4.4.2
     # via qdrant-client
 protobuf==7.36.2
@@ -122,6 +126,10 @@ pygments==2.21.0
     #   pytest
     #   rich
 pytest==9.2.0
+    # via
+    #   -r requirements.in
+    #   pytest-cov
+pytest-cov==7.1.0
     # via -r requirements.in
 pyyaml==6.0.3
     # via
@@ -133,6 +141,8 @@ regex==2026.11.7
     # via transformers
 rich==15.0.0
     # via typer
+ruff==0.17.4
+    # via -r requirements.in
 safetensors==0.8.0
     # via transformers
 scikit-learn==1.9.1

@@ -84,3 +84,20 @@ uvicorn semsearch.api.main:app --reload
 - Point de santé : http://127.0.0.1:8000/health renvoie `{"statut": "ok", "qdrant": "connecte"}`, ou `"injoignable"` si Qdrant est arrêté.
 - Documentation interactive (OpenAPI) : http://127.0.0.1:8000/docs
 - L'adresse de Qdrant est configurable avec la variable d'environnement `QDRANT_URL` (par défaut `http://localhost:6333`).
+
+## Qualité du code
+
+Une seule commande vérifie le formatage, l'analyse statique et les tests, avec la couverture :
+
+```bash
+python scripts/qualite.py
+```
+
+Elle s'arrête au premier échec avec un message explicite. Outils utilisés : [Ruff](https://docs.astral.sh/ruff/) (formatage et analyse statique) et pytest-cov (couverture). Les règles sont définies dans `pyproject.toml`.
+
+Corriger automatiquement le style avant un commit :
+
+```bash
+ruff format .
+ruff check --fix .
+```

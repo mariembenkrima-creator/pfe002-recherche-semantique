@@ -4,6 +4,7 @@ Utilisation :
     python scripts/verifier_persistance.py ecrire     -> crée 3 vecteurs de test
     python scripts/verifier_persistance.py verifier   -> vérifie qu'ils sont toujours là
 """
+
 import sys
 
 from qdrant_client import QdrantClient
@@ -29,8 +30,12 @@ def ecrire():
         collection_name=COLLECTION,
         points=[
             PointStruct(id=1, vector=[0.1, 0.2, 0.3, 0.4], payload={"texte": "arrêté"}),
-            PointStruct(id=2, vector=[0.4, 0.3, 0.2, 0.1], payload={"texte": "circulaire"}),
-            PointStruct(id=3, vector=[0.2, 0.2, 0.2, 0.2], payload={"texte": "note de service"}),
+            PointStruct(
+                id=2, vector=[0.4, 0.3, 0.2, 0.1], payload={"texte": "circulaire"}
+            ),
+            PointStruct(
+                id=3, vector=[0.2, 0.2, 0.2, 0.2], payload={"texte": "note de service"}
+            ),
         ],
         wait=True,
     )

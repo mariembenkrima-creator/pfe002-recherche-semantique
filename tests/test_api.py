@@ -1,4 +1,5 @@
 """Tests du squelette FastAPI (ticket MBKP0IA-14)."""
+
 import subprocess
 import sys
 
@@ -41,7 +42,11 @@ def test_demarrage_rapide_sans_modele():
         "print(duree)\n"
     )
     resultat = subprocess.run(
-        [sys.executable, "-c", code], capture_output=True, text=True, timeout=60
+        [sys.executable, "-c", code],
+        check=False,
+        capture_output=True,
+        text=True,
+        timeout=60,
     )
     assert resultat.returncode == 0, resultat.stderr
     duree = float(resultat.stdout.strip())

@@ -4,5 +4,7 @@ qdrant-client
 fastapi
 uvicorn
 
-# Tests
+# Tests et qualité du code
 pytest
+pytest-cov
+ruff

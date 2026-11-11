@@ -30,3 +30,8 @@ indexes/
 .vscode/
 .idea/
 .DS_Store
+
+# Qualité du code (couverture, caches)
+.coverage
+htmlcov/
+.ruff_cache/
