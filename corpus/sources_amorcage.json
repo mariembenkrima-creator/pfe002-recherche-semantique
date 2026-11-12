@@ -1,0 +1,49 @@
+{
+  "description": "Corpus d'amorçage : documents officiels de l'ONU, chacun en français, en arabe et en anglais.",
+  "sources": [
+    {
+      "cote": "ST/SGB/2018/1",
+      "type": "circulaire du Secrétaire général",
+      "titre": "Statut et Règlement du personnel de l'Organisation des Nations Unies",
+      "emetteur": "Secrétaire général de l'ONU",
+      "date": "2018-01-01",
+      "langues": ["fr", "ar", "en"],
+      "url": "https://digitallibrary.un.org/record/1467702/files/ST_SGB_2018_1-{LANGUE}.pdf",
+      "licence": "Document officiel de l'ONU portant une cote : l'ONU ne revendique pas de droit d'auteur sur ces documents (ST/AI/189/Add.9/Rev.2). Reproduction libre en citant la source.",
+      "licence_reference": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/United_Nations"
+    },
+    {
+      "cote": "ST/SGB/2024/2",
+      "type": "circulaire du Secrétaire général",
+      "titre": "Organisation du Bureau des Nations Unies pour la prévention des catastrophes",
+      "emetteur": "Secrétaire général de l'ONU",
+      "date": "2024-03-13",
+      "langues": ["fr", "ar", "en"],
+      "url": "https://digitallibrary.un.org/record/4041433/files/ST_SGB_2024_2-{LANGUE}.pdf",
+      "licence": "Document officiel de l'ONU portant une cote : l'ONU ne revendique pas de droit d'auteur sur ces documents (ST/AI/189/Add.9/Rev.2). Reproduction libre en citant la source.",
+      "licence_reference": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/United_Nations"
+    },
+    {
+      "cote": "ST/SGB/2010/7",
+      "type": "circulaire du Secrétaire général",
+      "titre": "Organisation du secrétariat de la Commission économique et sociale pour l'Asie occidentale",
+      "emetteur": "Secrétaire général de l'ONU",
+      "date": "2010-08-02",
+      "langues": ["fr", "ar", "en"],
+      "url": "https://digitallibrary.un.org/record/688014/files/ST_SGB_2010_7-{LANGUE}.pdf",
+      "licence": "Document officiel de l'ONU portant une cote : l'ONU ne revendique pas de droit d'auteur sur ces documents (ST/AI/189/Add.9/Rev.2). Reproduction libre en citant la source.",
+      "licence_reference": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/United_Nations"
+    },
+    {
+      "cote": "A/RES/68/252",
+      "type": "résolution de l'Assemblée générale",
+      "titre": "Gestion des ressources humaines",
+      "emetteur": "Assemblée générale des Nations Unies",
+      "date": "2013-12-27",
+      "langues": ["fr", "ar", "en"],
+      "url": "https://digitallibrary.un.org/record/763761/files/A_RES_68_252-{LANGUE}.pdf",
+      "licence": "Document officiel de l'ONU portant une cote : l'ONU ne revendique pas de droit d'auteur sur ces documents (ST/AI/189/Add.9/Rev.2). Reproduction libre en citant la source.",
+      "licence_reference": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/United_Nations"
+    }
+  ]
+}

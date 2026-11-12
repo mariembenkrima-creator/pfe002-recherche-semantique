@@ -15,7 +15,7 @@ ETAPES = [
     (
         "Formatage",
         [sys.executable, "-m", "ruff", "format", "--check", "."],
-                "Lancez 'ruff format .'. Si Ruff signale 'invalid-syntax', corrigez d'abord la ligne indiquée.",
+        "Lancez 'ruff format .'. Si Ruff signale 'invalid-syntax', corrigez d'abord la ligne indiquée.",
     ),
     (
         "Analyse statique",

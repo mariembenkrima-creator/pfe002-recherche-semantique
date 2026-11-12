@@ -154,3 +154,27 @@ Corriger automatiquement le style avant un commit :
 ruff format .
 ruff check --fix .
 ```
+
+## Corpus d'amorçage
+
+```powershell
+python scripts/charger_corpus.py
+```
+
+Télécharge 12 PDF dans `data/raw/amorcage/` (non versionné) : 4 documents officiels de l'ONU,
+chacun en français, arabe et anglais, et écrit un manifeste avec la taille, l'empreinte SHA-256
+et la licence de chaque fichier. Les fichiers déjà présents ne sont pas retéléchargés.
+
+| Cote | Type | Titre |
+|---|---|---|
+| ST/SGB/2018/1 | Circulaire du Secrétaire général | Statut et Règlement du personnel |
+| ST/SGB/2024/2 | Circulaire du Secrétaire général | Organisation du Bureau pour la prévention des catastrophes |
+| ST/SGB/2010/7 | Circulaire du Secrétaire général | Organisation du secrétariat de la CESAO |
+| A/RES/68/252 | Résolution de l'Assemblée générale | Gestion des ressources humaines |
+
+**Licence** : documents officiels de l'ONU portant une cote ; l'ONU ne revendique pas de droit
+d'auteur sur ces documents (ST/AI/189/Add.9/Rev.2). Reproduction libre en citant la source.
+La liste des sources et la licence de chacune sont consignées dans `corpus/sources_amorcage.json`.
+
+**Limites** : corpus réduit, PDF à texte natif uniquement (pas de document scanné pour tester
+l'OCR). Il sera complété aux sprints suivants.
